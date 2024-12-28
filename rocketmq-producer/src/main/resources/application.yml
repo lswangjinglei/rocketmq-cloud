@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: rocketmq-cloud
+server:
+  port: 8082
+  servlet:
+    context-path: /rocketmq
+
+rocketmq:
+  name-server: 192.168.31.10:9876
+  producer:
+    group: rocketmq-demo
+    send-message-timeout: 30000
