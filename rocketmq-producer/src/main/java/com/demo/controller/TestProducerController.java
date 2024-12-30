@@ -1,6 +1,6 @@
-package com.longshine.controller;
+package com.demo.controller;
 
-import com.longshine.rocketmq.TestProducer;
+import com.demo.rocketmq.TestProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +16,7 @@ public class TestProducerController {
 
     @PostMapping("/producer")
     public String producer(@RequestBody String message) {
-        testProducer.send("TestTopic", message);
+        testProducer.send("order", message);
         return "SUCCESS!!";
     }
 }

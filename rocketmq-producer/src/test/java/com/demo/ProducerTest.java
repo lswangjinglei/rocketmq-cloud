@@ -1,6 +1,6 @@
-package com.longshine;
+package com.demo;
 
-import com.longshine.rocketmq.TestProducer;
+import com.demo.rocketmq.TestProducer;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +13,6 @@ public class ProducerTest {
 
     @Test
     void testProducer() {
-        producer.send("TestTopic", "TestMessage");
+        producer.send("order", "TestMessage");
     }
 }
